@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Header.module.css";
+import logo from "../../Assets/logo.png"
 
 const Header = () => {
   return (
@@ -12,7 +13,7 @@ const Header = () => {
           <i className="fa-brands fa-facebook-f px-3" />
           <i className="fa-brands fa-twitter" />
           <i className="fa-brands fa-instagram px-3" />
-          <i className="fa-brands fa-fan px-3" />
+          <img src={logo} alt="" width="82px" />
         </section>
       </div>
       <div className={styles.inputFieldsBtnParent}>

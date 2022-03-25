@@ -13,7 +13,9 @@
   /* border: 1px solid; */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
+  width: 80%;
+  margin-left: 80px;
   /* align-items: center; */
 }
 .child1 {
@@ -32,15 +34,27 @@
 }
 label {
   font-size: 0.9rem;
-  /* border: 1px solid; */
-  margin: 5px 0;
+  width: 250px;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  right: 5px;
 }
 label span {
   color: blue;
+    /* border: 1px solid; */
+
 }
+label input{
+    margin-top:10px ;
+    position: relative;
+    top: 4px;
+    width: 20px !important;
+}
+
 .inpParent {
   /* border:  1px solid; */
-  width: 92%;
+  width: 94%;
   margin: 5px 0;
   /* margin-left: 5px; */
 }
@@ -67,26 +81,19 @@ label span {
 }
 .paraBox {
   /* border: 1p   x solid red; */
-  width: 80%;
+  width: 90%;
   /* text-align: center; */
   padding-left: 5px;
-  word-spacing: 5px;
-  font-size: 0.9rem;
+  /* word-spacing: 5px; */
+  font-size: 0.8rem;
   font-weight: bold;
   margin: 10px 0;
 }
 .paraBox span {
   color: blue;
 }
-.child2 {
-  /* border: 1px solid; */
-  width: 35%;
-  padding: 0 20px;
-}
-.child2 p {
-  color: red;
-}
-@media only screen and (max-width: 900px) {
+
+@media only screen and (max-width: 992px) {
 
 .inputFieldsBox{
     flex-direction: column;
@@ -95,4 +102,19 @@ label span {
 .child1 , .child2{
     width: 80%;
 }
+}
+@media only screen and (max-width : 700px){
+    .inputFieldsBox{
+        margin: 0 auto;
+    }    
+}
+
+@media only screen and (max-width :420px){
+    .inp1 input{
+        width: 46%;
+        margin: 0 3px;
+    }
+    input::placeholder{
+        font-size: 0.8rem;
+    }
 }

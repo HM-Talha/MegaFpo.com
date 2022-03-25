@@ -14,7 +14,11 @@
 .headerParent p {
   /* border: 1px solid red; */
   padding: 8px;
+  position: relative;
+  top: 15px;
   font-weight: bold;
+  width: 200px;
+  text-align: center;
   font-size: 1.3rem;
   color: #fff;
   background-color: #ee7600;
@@ -29,7 +33,7 @@
   font-size: 1.3rem;
   border: 1px solid;
   padding: 10px;
-  background-color: #ee7600;
+  background-color: #FAA636;
   color: #fff;
   border-radius: 50%;
 }
@@ -52,6 +56,8 @@
 }
 .inpBox p {
   width: 15%;
+  position: relative;
+  /* bottom: 1px; */
   padding: 4px 0px 4px 10px;
   font-weight: bold;
   font-size: 1.1rem;
@@ -88,33 +94,40 @@
 }
 .loginSignupBtn {
   width: 15%;
-  padding-top: 2px;
+  /* padding-top: 2px; */
+  padding: 0;
+  /* margin: 0; */
+  position: relative;
+  bottom: 2px;
 }
 .loginSignupBtn button {
-  padding: 1px 16px;
-  margin: 0 5px;
+  padding: 1px 17px;
+  margin:4px 2px;
   font-size: 1.4rem;
-  width: 45%;
+  width: 48%;
 }
 .loginBtn {
-  background-color: #228b22;
-  color: #fff;
-  border: none;
-  font-weight: bolder;
-}
-.loginBtn:hover {
-  background-color: #006400;
-  transition: 0.5s;
-}
-.signupBtn {
   background-color: #ee7600;
   color: #fff;
   border: none;
   font-weight: bolder;
 }
+.signupBtn:hover {
+  background-color: #006400;
+  transition: 0.5s;
+}
+.signupBtn {
+  background-color: #228b22;
+  color: #fff;
+  border: none;
+  font-weight: bolder;
+  /* width: 90px !important; */
+  /* text-align: center; */
+  /* padding-right: 15px !important; */
+}
 .inpBox p:hover,
 .menuBtnBox button:hover,
-.signupBtn:hover {
+.loginBtn:hover {
   background-color: #ec5800;
   transition: 0.5s;
 }
@@ -138,7 +151,8 @@
   }
   .inpBox p {
     position: relative;
-    top: 2px;
+    top: 1px;
+    padding: 5px;
     width: 100px;
   }
 }

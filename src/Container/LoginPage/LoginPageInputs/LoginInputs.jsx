@@ -25,14 +25,14 @@ const LoginInputs = () => {
           </section>
         </div>
         <div className={styles.child2}>
-          <section className={styles.paraBox2}>
+          {/* <section className={styles.paraBox2}>
             <p>
               After clicking the <span>Log In</span> in button a new page will
               open in which user can enter the valid details and can login to
               the portal.
             </p>
             <p>After proper sign in Dashboard will be visible to the user.</p>
-          </section>
+          </section> */}
         </div>
       </section>
     </div>
