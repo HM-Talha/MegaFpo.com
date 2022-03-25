@@ -5,7 +5,7 @@ const LoginInputs = () => {
   return (
     <div className="mt-5">
       <section className={styles.topParaBox}>
-        <p className={styles.para}> In for myFPO:</p>
+        <p className={styles.para}> Log In for myFPO:</p>
       </section>
       <section className={styles.loginInpParent}>
         <div className={styles.child1}>
