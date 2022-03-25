@@ -1,0 +1,98 @@
+.topParaBox {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.topParaBox p {
+  /* border: 1px solid orange; */
+  font-size: 1.5rem;
+  width: 70%;
+}
+.inputFieldsBox {
+  /* border: 1px solid; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+}
+.child1 {
+  /* border: 1px solid; */
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.child1 input {
+  margin: 0 5px;
+  width: 45%;
+}
+.child1 input::placeholder {
+  text-align: center;
+}
+label {
+  font-size: 0.9rem;
+  /* border: 1px solid; */
+  margin: 5px 0;
+}
+label span {
+  color: blue;
+}
+.inpParent {
+  /* border:  1px solid; */
+  width: 92%;
+  margin: 5px 0;
+  /* margin-left: 5px; */
+}
+.inpParent input {
+  width: 100%;
+}
+.btnBox {
+  /* border: 1px solid red; */
+  width: 95%;
+  text-align: end;
+  padding: 5px;
+}
+.btnBox button {
+  padding: 0 20px;
+  font-size: 1.2rem;
+  background-color: #228b22;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
+.btnBox button:hover{
+    transition: 0.5s;
+    background-color: #006400;
+}
+.paraBox {
+  /* border: 1p   x solid red; */
+  width: 80%;
+  /* text-align: center; */
+  padding-left: 5px;
+  word-spacing: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.paraBox span {
+  color: blue;
+}
+.child2 {
+  /* border: 1px solid; */
+  width: 35%;
+  padding: 0 20px;
+}
+.child2 p {
+  color: red;
+}
+@media only screen and (max-width: 900px) {
+
+.inputFieldsBox{
+    flex-direction: column;
+    align-items: center;
+}
+.child1 , .child2{
+    width: 80%;
+}
+}

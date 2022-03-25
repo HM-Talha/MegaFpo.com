@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.topParaBox{
+  /* border: 1px solid; */
+  bottom: 35px;
+  position: relative;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+}
+.para{
+  /* border: 1px solid; */
+    /* margin: 0 0 50px 100px; */
+    width: 70%;
+    font-size: 1.5rem;
+    /* border: 1px solid; */
+}
+.loginInpParent {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.child1 {
+  /* border: 1px solid orange; */
+  width: 40%;
+}
+.child1 input {
+  outline: none;
+  width: 350px;
+  margin: 0 auto;
+  margin: 5px 0;
+  
+}
+.child1 input::placeholder {
+  color: #000;
+  text-align: center;
+}
+.child2 {
+  /* border: 1px solid orangered; */
+  width: 40%;
+}
+.inpBox {
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+.btnBox {
+  /* border: 1px solid; */
+  width: 350px;
+  margin: 10px auto;
+  text-align: end;
+}
+.btnBox button {
+  background-color: #228b22;
+  color: #fff;
+  padding: 4px 15px;
+  font-size: 1.2rem;
+  border: none;
+}
+.btnBox button:hover {
+  background-color: #006400;
+  transition: 0.5s;
+}
+.paraBox1{
+    /* border: 1px solid red; */
+    width: 350px;
+    margin: 0 auto;
+    padding: 5px;
+}
+.paraBox1 p{
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.paraBox1 p span{
+    color: blue;
+}
+.paraBox2 p{
+    color: red;
+    font-weight: bold;
+}
+.paraBox2 p span{
+    /* border: 1px solid; */
+    color: #228b22;
+}
+@media only screen and (max-width : 940px){
+    .loginInpParent{
+        flex-direction: column;
+        align-items: center;
+    }
+    .child1 , .child2{
+        width: 100%;
+    }   
+    .child2 p{
+        width: 350px;
+        border: 1px solid;
+        margin: 10px auto;
+    }
+}

@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.headerParent {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  flex-wrap: wrap;
+  /* padding-bottom: 0; */
+}
+.headerParent p {
+  /* border: 1px solid red; */
+  padding: 8px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: #ee7600;
+}
+.iconBox {
+  padding: 8px 10px 8px 10px;
+
+}
+
+.iconBox i {
+  margin: 0 10px;
+  font-size: 1.3rem;
+  border: 1px solid;
+  padding: 10px;
+  background-color: #ee7600;
+  color: #fff;
+  border-radius: 50%;
+}
+.inputFieldsBtnParent {
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.inpBox {
+  display: flex;
+  align-items: baseline;
+  width: 45%;
+  margin: 0 5px;
+}
+.inpBox input {
+  width: 80%;
+  padding: 4px;
+  outline: none;
+}
+.inpBox p {
+  width: 15%;
+  padding: 4px 0px 4px 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: #ee7600;
+  color: #fff;
+}
+.inpBox i {
+  border: 1px solid;
+  padding: 8px;
+  height: 36px;
+  position: relative;
+  top: 2px;
+  font-size: 1.2rem;
+  color: gray;
+}
+.inpBox i:hover {
+  background-color: #ee7600;
+  color: #fff;
+  border-color: #ee7600;
+  transition: 0.5s;
+}
+.menuBtnBox {
+  width: 120px;
+  padding-top: 0;
+}
+.menuBtnBox button {
+  background-color: #ee7600;
+  width: 100%;
+  padding: 6px 8px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+}
+.loginSignupBtn {
+  width: 15%;
+  padding-top: 2px;
+}
+.loginSignupBtn button {
+  padding: 1px 16px;
+  margin: 0 5px;
+  font-size: 1.4rem;
+  width: 45%;
+}
+.loginBtn {
+  background-color: #228b22;
+  color: #fff;
+  border: none;
+  font-weight: bolder;
+}
+.loginBtn:hover {
+  background-color: #006400;
+  transition: 0.5s;
+}
+.signupBtn {
+  background-color: #ee7600;
+  color: #fff;
+  border: none;
+  font-weight: bolder;
+}
+.inpBox p:hover,
+.menuBtnBox button:hover,
+.signupBtn:hover {
+  background-color: #ec5800;
+  transition: 0.5s;
+}
+@media only screen and (max-width: 1115px) {
+  .inputFieldsBtnParent {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .loginSignupBtn {
+    width: 100%;
+    text-align: center;
+  }
+  .loginSignupBtn button{
+
+    width: 200px;
+  }
+  .inpBox {
+    margin: 10px;
+    width: 80%;
+  }
+  .inpBox p {
+    position: relative;
+    top: 2px;
+    width: 100px;
+  }
+}
